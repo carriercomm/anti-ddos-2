@@ -1,4 +1,4 @@
-anti-ddos
+Anti-DDOS
 =========
 
-Simple anti-ddos script
+Simple anti-ddos script for FreeBSD
