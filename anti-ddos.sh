@@ -1,6 +1,8 @@
 #!/bin/sh
-# Set here a minimum number of connections for action to be executed (150 by default).
-
+#
+#
+# Set here a minimum number of connections for action to be executed
+#
 FR_MIN_CONN=5000
 TMP_PREFIX='/tmp/ofedosong'
 TMP_FILE=`mktemp $TMP_PREFIX.XXXXXXXX`
@@ -20,7 +22,9 @@ while read line; do
   break
  fi
  
+ #
  # You can insert your own logic here (e.g. ban with your favourite firewall). Now it just prints the IP to console.
+ #
  echo "Adding to ban: ${CURR_LINE_IP} (Conn: ${CURR_LINE_CONN}) $(/bin/date)"
  /sbin/ipfw table 10 add $CURR_LINE_IP
 
